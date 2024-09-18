@@ -41,6 +41,8 @@ body{
   object-fit: contain;
   width: 200px;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .box i{

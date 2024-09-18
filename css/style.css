@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color : #f98524
+}
+body{
+  height: 100svh;
+  /* font-family: "poppins"; */
+  font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+.contain{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: black;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 95%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box img{
+  object-fit: contain;
+  width: 200px;
+  cursor: pointer;
+}
+
+.box i{
+  color: white;
+}
+.icons{
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+}
+.icons i{
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.icons i:hover{
+  color:  #f98524;
+  transform: scale(1.3);
+}
+
+
+.move-left{
+  color: white !important;
+  left: 20px !important;
+}
+.move-right{
+  color: white !important;
+  right: 20px !important;
+}
+
+.mySwiper{
+  height: 100svh !important;
+  /* margin-top: 60px !important; */
+  /* position: absolute !important; */
+  /* top: 0 !important;  */
+}
+
+.nav{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+.burger{
+  display: block;
+}
+
+/* custom screen size */
+@media(max-width:1000px){
+  .nav{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .icons{
+    width: 100px;
+  }
+  .box{
+    width: 90%;
+  }
+}
+@media(min-width:1000px){
+  .burger{
+    display: none !important;
+  }
+}
+@media(min-width:355px) and (max-width:475px){
+  .image-data h2{
+    font-size: 25px !important;
+  }
+}
+/* custom screen size */
+.green:hover{
+  background-color: green !important;
+}
+
+.full{
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #f98524;
+  left: -100%;
+  top: 60px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.3s ease;
+
+}
+.full li{
+  display: block;
+  margin-bottom: 40px;
+  transition: 0.3s ease;
+}
+.full a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  transition: 0.3s ease;
+
+}
+.full a:hover{
+  color: white;
+}
+
+.unhide{
+  left: 0;
+}
+.swiper-pagination-bullet-active{
+  background: var(--color) !important
+}
+
+
+
+.hide{
+  right: 441px;
+  top: 12px;
+  background-color: black;
+  width: 12px;
+  height: 37px;
+  position: absolute;
+  z-index: 101;
+  transform-origin: left 0;
+  transition: 2s linear;
+}
+.hide2{
+  width: 230px;
+  transition: 2s linear;
+
+}
+
+.logo2{
+  position: absolute;
+  left: 50px;
+  top: 5px;
+  z-index: 103;
+  object-fit: contain;
+  width: 55px;
+  display: none;
+}
+.block{
+  display: block;
+}
+

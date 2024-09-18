@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color : #f98524
+}
+body{
+  height: 100svh;
+  /* font-family: "poppins"; */
+  font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+
+.back{
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.back img{
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 100%;
+}
+
+.back::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: #03010065;
+z-index: 2;
+}
+
+.text-box{
+  position: absolute;
+  z-index: 98;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-box p{
+  line-height: 1.8;
+  font-size: 22px;
+  width: 100%;
+}
+
+@media(max-width:1200px){
+  .text-box p{
+    line-height: 1.6;
+    font-size: 15px;
+    width: 100%;
+    height: 85%;
+  }
+}
+
+@media(min-width:380px) and (max-width:570px){
+  .text-box p{
+    line-height: 1.5;
+    font-size: 13px;
+    width: 100%;
+    
+  }
+  .text-box{
+    height: 70%;
+    width: 85%;
+  }
+}

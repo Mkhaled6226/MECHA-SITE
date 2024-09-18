@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navi.css">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/norm.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- NAVIGATION BAR  -->
+<div class="contain">
+  <div class="box">
+    <img class="logo" src="photo/MECHA-LOGO.-TRANSPARENT-png copy.png" alt="">
+    <section class="nav" style=" color: #fff;">
+      <nav class="blend">
+        <ul dir="rtl">
+          <li><a href="#">الأخبار</a></li>
+          <li><a href="#">المقررات</a></li>
+          <li><a href="#">الجداول</a></li>
+          <li><a href="#">الانشطة</a></li>
+          <!-- <li><a href="#">Nice staff</a></li> -->
+        </ul>
+      </nav>
+    </section>
+    <div class="icons">
+      <i class="user fa-solid fa-user"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="burger fa-solid fa-bars "></i>
+    </div>
+   </div>
+</div>
+<ul class="full" dir="rtl">
+  <li><a href="#">الأخبار</a></li>
+  <li><a href="#">المقررات</a></li>
+  <li><a href="#">الجداول</a></li>
+  <li><a href="#">الانشطة</a></li>
+  <!-- <li><a href="#">Nice staff</a></li> -->
+</ul>
+<!-- NAVIGATION BAR  -->
+
+<!-- LANDING -->
+<section class="main swiper mySwiper">
+  <div class="wrapper swiper-wrapper">
+    <div class="slide swiper-slide">
+      <img src="photo/landing1.jpg" alt="" class="image" />
+      <div class="image-data">
+        <span class="text">عالم الروبوتات</span>
+        <h2>
+          المعالجات الدقيقة <br />
+           و تقنيات المستقبل 
+        </h2>
+        <a href="more.html" class="button">اعرف أكثر</a>
+      </div>
+    </div>
+    <div class="slide swiper-slide">
+      <img src="photo/landing89.png" alt="" class="image" />
+      <div class="image-data">
+        <span class="text">المحافظة على البيئة</span>
+        <h2>
+          الإستدامة و مجال<br />
+          الطاقة النظيفة
+        </h2>
+        <a href="#" class="button green">اعرف أكثر</a>
+      </div>
+    </div>
+    <div class="slide swiper-slide">
+      <img src="photo/landing7.png" alt="" class="image" />
+      <div class="image-data">
+        <span class="text">النهضة الصناعية</span>
+        <h2>
+            مجالات الصناعة الحديثة <br />
+            و كيفية بناء أول مشروع
+        </h2>
+        <a href="#" class="button">التفاصيل</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-button-next move-right"></div>
+  <div class="swiper-button-prev move-left"></div>
+  <div class="swiper-pagination"></div>
+</section>
+<!-- LANDING -->
+<div class="hide"></div>
+<div><img class="logo2" src="photo/300.png" alt=""></div>
+
+  <script src='main.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev-",
+      },
+    });
+  </script>
+
+</body>
+</html>
+

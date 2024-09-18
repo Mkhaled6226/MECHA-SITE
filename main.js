@@ -1,17 +1,3 @@
-// // landing
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-// // landing
 
 const burger = document.querySelector(".burger");
 // const cs = window.getComputedStyle(font);
@@ -39,8 +25,8 @@ logo.addEventListener('click',()=>{
   const userAgent = navigator.userAgent.toLowerCase();
  
   /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent)
-    ? window.location.href = 'http://192.168.1.2:5500/index.html'
-    :  window.location.href = 'http://127.0.0.1:5500/index.html';
+    ? window.location.href = 'index.html'
+    :  window.location.href = 'index.html';
     
   })
 
@@ -49,10 +35,8 @@ logo.addEventListener('click',()=>{
     const userAgent = navigator.userAgent.toLowerCase();
    
     /Mobile|Android|iPhone|iPad/i.test(navigator.userAgent)
-      ? window.location.href = 'http://192.168.1.2:5500/login.html'
-      :  window.location.href = 'http://127.0.0.1:5500/login.html';
+      ? window.location.href = 'login.html'
+      :  window.location.href = 'login.html';
       
     })
-
-
 
